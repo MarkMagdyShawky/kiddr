@@ -68,6 +68,8 @@ class _MyAppState extends State<MyApp> {
       home: AnimatedSplashScreen(
         splashTransition: SplashTransition.scaleTransition,
         splashIconSize: 200,
+        //animation duration
+        duration: 400,
         splash: CircleAvatar(
           backgroundImage: AssetImage("assets/icon1.png"),
           radius: 90,
