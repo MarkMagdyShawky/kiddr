@@ -1,0 +1,43 @@
+{
+    "MyHomeWelcome" : "مرحباً بك في كيدر، لنبدأ",
+    "MyHomeLogin" : "تسجيل الدخول",
+    "MyHomeSignUp" : "إنشاء حساب",
+
+    "OnBordingSkip" : "تخطى",
+    "OnBordingDone" : "تم",
+
+    "IntroScreenWelcome" : "مرحباً بك في كيدر! ",
+    "IntroScreenQuote" : "كيدر هو دليلك الشخصي لفهم صحة طفلك. يستخدم نظامنا الخبير خوارزميات متقدمة لتقييم الأعراض وتقديم تشخيصات دقيقة وتوصيات للعلاج.",
+    "IntroScreen2text1" : "خدمة كيدر",
+    "IntroScreen2text2" : "نحن هنا لمساعدتك على مدار الساعة طوال أيام الأسبوع، صحة الأطفال مهمة",
+
+    "LoginWelcome" : "مرحباً بك مجدداً",
+    "LoginSubtitle" : "أدخل بياناتك لتسجيل الدخول",
+    "LoginNoAccount" : "ليس لديك حساب؟",
+    "SucessMessage" : "تم تسجيل الدخول بنجاح",
+    "LoginEmailCheck" : "الرجاء إدخال بريدك الإلكتروني",
+    "LoginEmailHint" : "البريد الإلكتروني",
+    "LoginPasswordCheck" : "الرجاء إدخال كلمة المرور الخاصة بك",
+    "LoginPasswordHint" : "كلمة المرور",
+    "LoginEmailEMpty" : "أدخل بريدك الإلكتروني أولاً",
+    "LoginResetpass" : "إعادة تعيين كلمة المرور",
+    "LoginResetEmail" : "تحقق من بريدك الإلكتروني وأعد تعيين كلمة المرور الخاصة بك.",
+    "LoginForgetPass" : "هل نسيت كلمة المرور؟",
+    "LoginWrongPass" : "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+    "LoginContinueWithGoogle" : "متابعة مع جوجل" ,
+
+    "GetStartedMessage" : "حبك ورعايتك هما أعظم هدية يمكنك تقديمها لطفلك ",
+    "GetStarted" : "ابدأى الآن",
+    
+    "SignupCreateAccount" : "إنشاء حساب جديد",
+    "SignUpAlreadyHaveAccount" : "هل لديك حساب بالفعل؟",
+    "SignUpUsernameHint" : "اسم المستخدم",
+    "SignUpUsernameEmpty" : "الرجاء إدخال اسم المستخدم الخاص بك",
+    "SignUpWeakPass" : "كلمة المرور المقدمة ضعيفة جدا",
+    "SignUpAlreadyExists" : "الحساب موجود بالفعل لهذا البريد الإلكتروني",
+    "SomethingWrong": "حدث خطأ ما",
+    "TryAgain": "حاول مرة أخرى"
+
+
+
+}

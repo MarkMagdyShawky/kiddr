@@ -3,6 +3,8 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:taweret/getStart.dart';
 import 'package:taweret/intro_screens/intro_page_1.dart';
 import 'package:taweret/intro_screens/intro_page_2.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'generated/l10n.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
@@ -47,8 +49,8 @@ class OnBoardingScreenState extends State<OnBoardingScreen> {
                                   return MyGetStartPage();
                                 }));
                               },
-                              child: const Text(
-                                "Skip",
+                              child: Text(
+                                S.of(context).OnBordingSkip , // OnBordingSkip
                                 style: TextStyle(color: Color.fromARGB(255, 113, 118, 255), fontSize: 20),
                               )),
                         ),
@@ -70,7 +72,7 @@ class OnBoardingScreenState extends State<OnBoardingScreen> {
                                 return MyGetStartPage();
                               }));
                             },
-                            child: const Text("Done",
+                            child:  Text(S.of(context).OnBordingDone, //OnBordingDone
                                 style: TextStyle(color: Color.fromARGB(255, 113, 118, 255), fontSize: 20)),
                           ),
                         )

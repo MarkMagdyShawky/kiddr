@@ -11,6 +11,10 @@ import 'package:taweret/componants/constants.dart';
 import 'package:taweret/onbording_screen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
+import 'generated/l10n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+
 class MyLoginPage extends StatefulWidget {
   const MyLoginPage({super.key});
 
@@ -49,8 +53,8 @@ class _LoginPageState extends State<MyLoginPage> {
         context: context,
         dialogType: DialogType.success,
         animType: AnimType.scale,
-        title: 'Sucessfully',
-        desc: 'Login Sucessfully',
+        title: 'Sucessfully', 
+        desc: S.of(context).SucessMessage ,// SucessMessage 
         btnOkOnPress: () {
           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => OnBoardingScreen()));
         },
@@ -73,9 +77,15 @@ class _LoginPageState extends State<MyLoginPage> {
               height: 30,
             ),
             LoginSignupHeader(
+<<<<<<< HEAD
               pageTitle: "Welcome Back",
               imageLocation: "assets/login6.svg",
               subtitle: "Enter your data to Login",
+=======
+              pageTitle: S.of(context).LoginWelcome, //LoginWelcome
+              imageLocation: "assets/login6.svg",
+              subtitle: S.of(context).LoginSubtitle, //LoginSubtitle
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
             ),
             const SizedBox(
               height: 20,
@@ -85,9 +95,15 @@ class _LoginPageState extends State<MyLoginPage> {
               height: 20,
             ),
             LoginSignupFooter(
+<<<<<<< HEAD
               question: "Don't have an account?",
               nextPage: _createMyLoginPage,
               btnName: "Sign Up",
+=======
+              question: S.of(context).LoginNoAccount, // LoginNoAccount
+              nextPage: _createMyLoginPage,
+              btnName: S.of(context).MyHomeSignUp, //myhome signup
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
             )
           ],
         ),
@@ -107,12 +123,12 @@ class _LoginPageState extends State<MyLoginPage> {
               controller: email,
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your email';
+                  return S.of(context).LoginEmailCheck; //LoginEmailCheck
                 }
                 return null;
               },
               decoration: InputDecoration(
-                hintText: "Email",
+                hintText: S.of(context).LoginEmailHint, //LoginEmailHint
                 prefixIcon: const Icon(
                   Icons.email,
                   color: kPrimaryColor,
@@ -135,14 +151,14 @@ class _LoginPageState extends State<MyLoginPage> {
               controller: password,
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your password';
+                  return S.of(context).LoginPasswordCheck;// LoginPasswordCheck
                 }
                 return null;
               },
               obscureText: true,
               cursorColor: kPrimaryColor,
               decoration: InputDecoration(
-                hintText: "Password",
+                hintText: S.of(context).LoginPasswordHint, //LoginPasswordHint
                 prefixIcon: const Icon(
                   Icons.lock,
                   color: kPrimaryColor,
@@ -161,7 +177,11 @@ class _LoginPageState extends State<MyLoginPage> {
             onTap: () async {
               if (email.text == "") {
                 setState(() {
+<<<<<<< HEAD
                   _showErrorDialog(context, "Enter Your Email First");
+=======
+                  _showErrorDialog(context, S.of(context).LoginEmailEMpty); //LoginEmailEMpty
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
                 });
                 return;
               }
@@ -169,7 +189,11 @@ class _LoginPageState extends State<MyLoginPage> {
               try {
                 await FirebaseAuth.instance.sendPasswordResetEmail(email: email.text);
                 setState(() {
+<<<<<<< HEAD
                   _showInfoDialog(context, 'Reset Password', 'Check your email and reset your passowrd.');
+=======
+                  _showInfoDialog(context, S.of(context).LoginResetpass, S.of(context).LoginResetpass); //LoginResetpass LoginResetEmail
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
                 });
               } on FirebaseAuthException catch (e) {
                 _showErrorDialog(context, e.message.toString());
@@ -179,7 +203,11 @@ class _LoginPageState extends State<MyLoginPage> {
               margin: EdgeInsets.only(right: 20),
               alignment: Alignment.topRight,
               child: Text(
+<<<<<<< HEAD
                 "Forget Password?",
+=======
+                S.of(context).LoginForgetPass, //LoginForgetPass
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
               ),
             ),
           ),
@@ -201,7 +229,11 @@ class _LoginPageState extends State<MyLoginPage> {
                   });
                 } on FirebaseAuthException catch (e) {
                   setState(() {
+<<<<<<< HEAD
                     _showErrorDialog(context, 'Wronge Email or Password');
+=======
+                    _showErrorDialog(context, S.of(context).LoginWrongPass);// LoginWrongPass
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
 
                     print("===================${e.code}");
                   });
@@ -213,8 +245,8 @@ class _LoginPageState extends State<MyLoginPage> {
             height: 30,
             minWidth: 255,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(60)),
-            child: const Text(
-              "Login",
+            child:  Text(
+              S.of(context).MyHomeLogin,
               style: TextStyle(fontSize: 20, color: Colors.white),
             ),
           ),
@@ -237,8 +269,13 @@ class _LoginPageState extends State<MyLoginPage> {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+<<<<<<< HEAD
                 const Text(
                   "Continue With Google ",
+=======
+                 Text(
+                  S.of(context).LoginContinueWithGoogle, //LoginContinueWithGoogle
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
                 SvgPicture.asset(
@@ -262,7 +299,11 @@ class _LoginPageState extends State<MyLoginPage> {
       dialogType: DialogType.success,
       animType: AnimType.scale,
       title: 'Successfully',
+<<<<<<< HEAD
       desc: 'Login Successfully',
+=======
+      desc: S.of(context).SucessMessage, //SucessMessage 
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
       btnOkOnPress: () {
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => OnBoardingScreen()));
       },

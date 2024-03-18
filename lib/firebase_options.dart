@@ -58,11 +58,19 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
+<<<<<<< HEAD
     apiKey: 'AIzaSyAnE4KWOkNC2WAG1n6mn68gF-oRbRg2L1c',
     appId: '1:439262531951:ios:8276bf7c93639bf001589a',
     messagingSenderId: '439262531951',
     projectId: 'taweret-5fbd1',
     storageBucket: 'taweret-5fbd1.appspot.com',
     iosBundleId: 'com.example.taweret',
+=======
+    apiKey: 'AIzaSyB0LxosVms_mysNxKrO8b5OFwLG89Vkzr8',
+    appId: '1:556269759120:ios:afeb1a3b99344603760615',
+    messagingSenderId: '556269759120',
+    projectId: 'taweret-3acad',
+    storageBucket: 'taweret-3acad.appspot.com',
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
   );
 }

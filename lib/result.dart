@@ -3,7 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:taweret/componants/showdata.dart';
 import 'package:taweret/componants/MyDrawer.dart';
-
+import 'package:taweret/generated/l10n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 class result extends StatefulWidget {
   final Map<String, dynamic> apiresult;
   const result(this.apiresult, {Key? key}) : super(key: key);
@@ -45,10 +46,17 @@ class _resultState extends State<result> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+<<<<<<< HEAD
                 showdata(field: "${data['name']}", data: 'You may have: '),
                 showdata(field: "${data['description']}", data: 'Description: '),
                 showdata(field: "${data['symptoms']}", data: 'Symptoms: '),
                 showdata(field: "${data['treatment']}", data: 'We suggest you to do: '),
+=======
+                showdata(field: "${data['name']}", data: S.of(context).ResultMayHave), //ResultMayHave
+                showdata(field: "${data['description']}", data: S.of(context).ResultDescription), //ResultDescription
+                showdata(field: "${data['symptoms']}", data: S.of(context).ResultSymptoms), //ResultSymptoms
+                showdata(field: "${data['treatment']}", data: S.of(context).ResultSuggest), //ResultSuggest
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
               ]),
         ),
       ]),

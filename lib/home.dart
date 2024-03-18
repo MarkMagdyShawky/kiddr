@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'generated/l10n.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -100,7 +102,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         Container(
           alignment: Alignment.center,
+<<<<<<< HEAD
           child: const Text("Welecome to Kidder, Let's Start ", style: TextStyle(fontSize: 18)),
+=======
+          // value of the text = welcomeing  
+          child:  Text(S.of(context).MyHomeWelcome, style: TextStyle(fontSize: 18)),
+>>>>>>> e0aa06ff8f1b5ac39105b75bd06de64a1eec92c6
         ),
         const SizedBox(
           height: 10,
@@ -125,8 +132,8 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: const EdgeInsets.only(top: 10, bottom: 10, right: 90, left: 90),
             height: 30,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(60)),
-            child: const Text(
-              "Login",
+            child:  Text(
+              S.of(context).MyHomeLogin, // value of text MyHomeLogin
               style: TextStyle(fontSize: 20, color: Colors.white),
             ),
           ),
@@ -146,8 +153,8 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.only(top: 10, bottom: 10, right: 90, left: 90),
           height: 30,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(60)),
-          child: const Text(
-            "Sign Up",
+          child:  Text(
+            S.of(context).MyHomeSignUp, // MyHomeSignup
             style: TextStyle(fontSize: 20, color: Colors.white),
           ),
         ),

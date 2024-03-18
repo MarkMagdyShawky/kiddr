@@ -1,0 +1,52 @@
+{
+    "MyHomeWelcome" : "Welecome to kiddr, Let's Start " ,
+    "MyHomeLogin" : "Login",
+    "MyHomeSignUp" :"Sign Up" ,
+
+    "OnBordingSkip" : "Skip",
+    "OnBordingDone" : "Done",
+
+    "IntroScreenWelcome" : "Welcome to kiddr!",
+    "IntroScreenQuote" : "kiddr is your personal guide to understanding your child's health. Our expert system utilizes advanced algorithms to assess symptoms and provide accurate diagnoses and treatment recommendations.",
+    "IntroScreen2text1" : "kiddr Service",
+    "IntroScreen2text2" : "  we are here to help you 24/7 children’s health is important " ,
+
+    "LoginWelcome" : "Welcome Back",
+    "LoginSubtitle" : "Enter your data to Login",
+    "LoginNoAccount" : "Don't have an account? ",
+    "SucessMessage" : "Login Successfully",
+    "LoginEmailCheck" : "Please enter your email",
+    "LoginEmailHint" : "Email",
+    "LoginPasswordCheck" : "Please enter your password",
+    "LoginPasswordHint" : "Password",
+    "LoginEmailEMpty" : "Enter Your Email First",
+    "LoginResetpass" : "Reset Password",
+    "LoginResetEmail" : "Check your email and reset your passowrd.",
+    "LoginForgetPass" : "Forget Password?",
+    "LoginWrongPass" : "Wronge Email or Password",
+    "LoginContinueWithGoogle" : "Continue With Google ",
+
+    "GetStartedMessage" : "Your love and care are the greatest gifts you can give your baby.",
+    "GetStarted" : "Get Started",
+
+    "SignupCreateAccount" :"Create new account",
+    "SignUpAlreadyHaveAccount" : "Already have account? ",
+    "SignUpUsernameHint" : "Username",
+    "SignUpUsernameEmpty" : "Please enter your username",
+    "SignUpWeakPass" :"The password provided is too weak",
+    "SignUpAlreadyExists" : "The account already exists for that email" ,
+    "SomethingWrong": "Something went wrong",
+    "TryAgain": "Try again",
+
+    "ResultMayHave": "You may have: ",
+    "ResultDescription": "Description: ",
+    "ResultSymptoms": "Symptoms: ",
+    "ResultSuggest": "We suggest you to do: " ,
+
+    "CommonCold" : "Common Cold" ,
+    "Flu" : "Flu" ,
+    "Flu" : "Flu" ,
+    "Flu" : "Flu" ,
+    "Flu" : "Flu" 
+      
+}
